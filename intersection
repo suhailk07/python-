@@ -8,6 +8,5 @@ for i in range(len(x2)):
     for j in range(len(y2)):
         if(x2[i]==y2[j]):
             k.append(x2[i])
-m=list(dict.fromkeys(k))
+m=list(set(k))
 print(*m)
-
