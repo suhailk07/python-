@@ -1,0 +1,13 @@
+x1=input()
+x2=x1.split()
+y1=input()
+y2=x1.split()
+k=[]
+z=[]
+for i in range(len(x2)):
+    for j in range(len(y2)):
+        if(x2[i]==y2[j]):
+            k.append(x2[i])
+m=list(dict.fromkeys(k))
+print(*m)
+
