@@ -1,0 +1,18 @@
+a=int(input())
+m=bin(a)
+y=m.lstrip("0b")
+z=list(y)
+k=[]
+c=0
+for i in z:
+    if(int(i)==0):
+        c+=1
+    elif(int(i)==1):
+        k.append(c)
+        c=0
+if(max(k)==0):
+    print("No binary Gap")
+else:
+    print(max(k))
+
+    
