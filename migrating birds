@@ -8,14 +8,14 @@ for i in range(len(x2)):
         min=x2.count(x2[i])
         if(min>0):
             k.append(min)
-m=zip(x2,k)
+m=zip(k,x2)
 m1=list(set(m))
 m1.sort()
 print(m1)
 n=len(m1)
-if(m1[n-1][1]==m1[n-2][1]):
-    print(m1[n-2][0])
+if(m1[n-1][0]==m1[n-2][0]):
+    print(m1[n-2][1])
 else:
-    print(m1[n-1][0])
+    print(m1[n-1][1])
 
 
