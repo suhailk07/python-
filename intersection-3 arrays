@@ -1,0 +1,11 @@
+n=input()
+n1=n.split()
+m=input()
+m1=m.split()
+o=input()
+o1=o.split()
+k=[]
+for i in n1:
+    if i in m1 and i in o1:
+        k.append(i)
+print(*k)
