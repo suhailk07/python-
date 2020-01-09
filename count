@@ -1,0 +1,14 @@
+a=input().split()
+b=int(input())
+c=int(input())
+k=[]
+count=0
+for i in range(c):
+    if(len(str(i))==b):
+        k.append(i)
+for i in k:
+    j=list(str(i))
+    if j[0] in a:
+        if j[1] in a: 
+            count+=1
+print(count)
