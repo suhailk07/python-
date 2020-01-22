@@ -22,6 +22,6 @@ for i in range(1,x+1):
         print(" ",end="")
     for j in range(1,i+1):
         print("*",end="")
-    z-=2
+    z-=2UZazjFX0JA5XIhxALJ9ZtLQBV0PGpPjXZjHaRMz4j8
     print()
     
