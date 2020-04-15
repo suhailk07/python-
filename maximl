@@ -1,0 +1,11 @@
+z=input()
+z=tuple(z)
+m,n=[],[]
+for i in z:
+    if i not in m:
+        m.append(i)
+    elif i in m:
+        n.append(len(m))
+        m=[]
+        m.append(i)
+print(max(n))
