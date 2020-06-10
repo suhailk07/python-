@@ -1,0 +1,32 @@
+def spiral(matrix,row,column):
+    row1 = 0
+    column1 = 0
+    while row1 < row and column1 < column:
+        for row2 in range(column1,column):
+            print(matrix[row1][row2],end=" ")
+        row1+=1
+        for column2 in range(row1,row):
+            print(matrix[column2][column-1],end=" ")
+        column-=1
+        if(row1<row):
+            for row2 in range(column-1,column1-1,-1):
+                print(matrix[row-1][row2],end=" ")
+            row-=1
+        if(column1<column):
+            for column2 in range(row1-1,row-1,-1):
+                print(matrix[column-1][column2],end=" ")
+            column1-=1
+    
+def main():
+    row = int(input())
+    column = int(input())
+    matrix = []
+    for i in range(row):
+        inner_matrix = []
+        for j in range(column):
+            inner_matrix.append(int(input()))
+        matrix.append(inner_matrix)
+    spiral(matrix,row,column)
+    
+if __name__=="__main__":
+    main()
